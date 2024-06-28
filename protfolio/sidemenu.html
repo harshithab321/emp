@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Document</title>
+    <style>
+     ul {
+        background-color:pink;
+        width:300px;
+        height:400px;
+        position: relative;
+        top:40px;
+       
+     }
+     ul li{
+        height: 70px;
+     }
+     .fa-times{
+        position: absolute;
+        top:-50px;
+        left:30px;
+       
+     }
+    .fa-bars{
+        position: absolute;
+        top: 10px;
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <!-- <h1 class="headername"><span>H</span>arshitha</h1> -->
+         <ul id="sidemenu">
+             <li><a href="#header">home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#services">Services</a></li>
+             <li><a href="#protfolio">Blog</a></li>
+             <li><a href="#contact">Contact</a></li>
+             <i class="fas fa-times" onclick="closemenu()"></i>
+         </ul>
+         <i class="fas  fa-bars" onclick="openmenu()"></i>
+     </nav>
+
+     <script>
+         let times=document.getElementsByClassName("fa-times")[0]
+         let bars=document.getElementsByClassName("fa-bars")[0]
+         let sidemenu=document.getElementsByTagName("ul")[0]
+        function closemenu(){
+            sidemenu.style.right = "-250px";
+            bars.style.display="block";
+            times.style.display="none";
+        }
+        function openmenu(){
+           
+            sidemenu.style.right = "0px";
+            times.style.display="block";
+            bars.style.display="none";
+            
+
+        }
+     </script>
+</body>
+</html>

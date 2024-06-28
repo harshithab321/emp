@@ -1,0 +1,26 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+.container{
+position: relative;
+margin-top: 50px;
+}
+.banner{
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display:grid;
+    grid-gap:40px;
+   
+}
+.cols{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    background: linear-gradient(black ,yellow);
+}
+  .cols:hover{
+    
+    transition: height 0.5s;
+  }
