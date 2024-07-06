@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Element Visibility</title>
+  <style>
+    /* Initial styling to hide the element */
+    #myElement {
+      display: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div id="myElement">
+    <!-- Content of the element goes here -->
+    This is the content of the element.
+  </div>
+
+  <script>
+    // Get the element by its ID
+    var element = document.getElementById("myElement");
+
+    // Toggle the display property
+    element.style.display = (element.style.display === "none") ? "block" : "none";
+  </script>
+
+</body>
+</html>
